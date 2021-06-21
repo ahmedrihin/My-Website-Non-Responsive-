@@ -1,0 +1,167 @@
+@media screen and (max-width:1124px) {
+    .container{
+        padding: 0 3rem !important;
+    }
+    .header-content-wrapper .header-left-content h2{
+        font-size: 2.7rem !important;
+    }
+    .header-content-wrapper .header-left-content h1{
+        font-size: 4rem !important;
+    }
+    header{
+        height: 100vh !important;
+    }
+}
+@media screen and (max-width:1024px) {
+    .navigation{
+        float: none !important;
+    }
+    .navigation ul{
+        justify-content: center;
+        margin-top: 0 !important;
+    }
+    
+    .navigation-wrapper .logo{
+        display: block !important;
+        text-align: center;
+    }
+    .header-content-wrapper{
+        top: 60% !important;
+    }
+    .header-content-wrapper .header-left-content h2{
+        font-size: 2rem !important;
+    }
+    .header-content-wrapper .header-left-content h1{
+        font-size: 3rem !important;
+    }
+}
+@media screen and (max-width:992px) {
+   
+    .btn{
+        padding: 0.8rem 1.1rem !important;
+    }
+    .my-detail-wrapper{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20rem;
+        grid-row-gap: 2rem;
+    }
+    .header-content-wrapper .header-right-content img{
+        height: 20rem !important;
+    }
+    .achievement-card-wrapper{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+@media screen and (max-width:901px) {
+    
+    .header-content-wrapper .header-left-content h4{
+        font-size: 1rem !important;
+    }
+    .header-content-wrapper .header-left-content h2{
+        font-size: 1.5rem !important;
+    }
+    .header-content-wrapper .header-left-content h1{
+        font-size: 2.5rem !important;
+    }
+}
+@media screen and (max-width:876px) {
+    
+    .header-content-wrapper .header-left-content .btn-view-work{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .about-me-text-wrapper{
+        flex-direction: column;
+    }
+    .about-me-text-wrapper .about-me-left-content{
+        width: 110% !important;
+    }
+}
+@media screen and (max-width:838px){
+    
+    .header-content-wrapper .header-left-content{
+        padding-right: 5rem !important;
+    }
+    .my-detail-wrapper{
+        grid-column-gap: 12rem !important;
+    }
+}
+@media screen and (max-width:768px) {
+    
+    .portfolio-card-wrapper{
+        flex-direction: column;
+    }
+    .portfolio-card-wrapper .portfolio-left-text{
+        margin-bottom: 5rem;
+    }
+    .about-top-text h2{
+        font-size: 2.5rem !important;
+    }
+    .header-content-wrapper .header-left-content{
+        padding-right: 1rem !important;
+    }
+}
+@media screen and (max-width:694px) {
+    .header-content-wrapper {
+        top: 50% !important; 
+        transform: translate(-50%, -50%) !important;
+        flex-direction: column-reverse;
+        left: 50%;
+    }
+    header{
+        height: 150vh !important;
+    }
+    .header-left-content{
+        text-align: center;
+    }
+    .header-content-wrapper .header-left-content .btn-view-work{
+        margin: auto !important;
+        margin-bottom: 1rem !important;
+    }
+    .contact-me-wrapper{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .contact-me-left-content{
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:615px) {
+    .my-detail-wrapper{
+        grid-column-gap: 5rem !important;
+    }
+    .achievement-card-wrapper{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .about-me-text-wrapper .about-me-left-content h2{
+        font-size: 1.7rem !important;
+    }
+    .about-me-text-wrapper .about-me-left-content p{
+        font-size: 1rem !important;
+    }
+    .navigation ul li a{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:549px) {
+    .about-me-text-wrapper .about-me-left-content h2{
+        font-size: 1.4rem !important;
+    }
+    .footer-text-wrapper{
+        flex-direction: column;
+    }
+    .footer-text-wrapper .footer-left-content{
+        margin-bottom: 1.5rem;
+    }
+    .about-me-text-wrapper .about-me-left-content {
+        width: 121% !important;
+    }
+}
+@media screen and (max-width:550px) {
+    .navigation ul li{
+        margin-right: 0.9rem !important;
+    }
+    .my-detail-wrapper {
+        grid-column-gap: 1rem !important;
+    }
+}

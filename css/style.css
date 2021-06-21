@@ -18,7 +18,7 @@ body{
     --footer-color: #262626;
 }
 .container{
-    width: 1152px;
+    max-width: 1152px;
     margin: auto;
 }
 .btn{
