@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <div class="navigation-wrapper">
                 <div class="logo">
@@ -34,24 +34,51 @@
                 </div>
                 <div class="navigation">
                     <ul>
-                        <li><a href="#">Home</a>
-                            <div></div>
+                        <li><a href="#home">Home</a>
+                            <div class="active"></div>
                         </li>
                         <li><a href="#about">About Me</a>
-                            <div></div>
+                            <div class="active"></div>
                         </li>
                         <li><a href="#achievement">Achievements</a>
-                            <div></div>
+                            <div class="active"></div>
                         </li>
                         <li><a href="#portfolio">Portfolio</a>
-                            <div></div>
+                            <div class="active"></div>
                         </li>
                         <li><a href="#contact-me">Contact Me</a>
-                            <div></div>
+                            <div class="active"></div>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
+        </div>
+
+        <!-- Mobile Hambarger -->
+
+        <div class="hamburger">
+            <span onclick="openNav()">&#9776;</span>
+            <div class="hamburger-overlay" id="hamburger-overlay">
+                <a href="javascript:void()" onclick="closeNav()">
+                    <i class="fas fa-times"></i>
+                </a>
+                <div class="navigation-overlay">
+                    <a onclick="closeNav()" href="#home">Home</a>
+                    <div class="overlay-nav-active"></div>
+                    <a onclick="closeNav()" href="#about">About Me</a>
+                    <div class="overlay-nav-active"></div>
+                    <a onclick="closeNav()" href="#achievement">Achievements</a>
+                    <div class="overlay-nav-active"></div>
+                    <a onclick="closeNav()" href="#portfolio">Portfolio</a>
+                    <div class="overlay-nav-active"></div>
+                    <a onclick="closeNav()" href="#contact-me">Contact Me</a>
+                    <div class="overlay-nav-active"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="header-content-wrapper">
                 <div class="header-left-content">
                     <h2>Hi, I'm a Student</h2>
@@ -272,8 +299,10 @@
 
                     <!-- Social Icons -->
                     <a href="#" target="_blank" class="twitter" title="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/dj.rihin" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#" class="linked-in" title="linked-in"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/dj.rihin" target="_blank" class="facebook" title="Facebook"><i
+                            class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="linked-in" title="linked-in"><i class="fab fa-linkedin"
+                            aria-hidden="true"></i></a>
                     <a href="#" class="github" title="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
                     <a href="#" class="dribbble" title="Dribble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
                 </div>
@@ -287,7 +316,8 @@
                         <input type="email" name="email" id="email">
                         <label for="message">How Can I Help You?</label>
                         <textarea name="message" id="mssage" cols="30" rows="5"></textarea>
-                        <button type="button" class="btn send-button">Send &nbsp;<i class="fas fa-arrow-right"></i></button>
+                        <button type="button" class="btn send-button">Send &nbsp;<i
+                                class="fas fa-arrow-right"></i></button>
                     </form>
                 </div>
             </div>
@@ -309,6 +339,8 @@
         </div>
     </footer>
     <script src="./js/fontawesome.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>

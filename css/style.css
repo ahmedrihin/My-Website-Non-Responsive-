@@ -30,7 +30,10 @@ body{
 }
 header{
     height: 100vh;
-    background-color: var(--yellow-background);
+    background-image: linear-gradient(rgba(245, 223, 78, 0.9), rgba(245, 223, 78, 0.9)), url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     position: relative;
 }
 section{
@@ -80,24 +83,84 @@ section{
     transition: all 0.2s ease;
 }
 .navigation ul li div{
-    background:transparent;
+    background: var(--dark);
     height: 4px;
     width: 0;
     border-radius: 10px;
     transition: all 1s ease;
-}
-.navigation ul li a:hover{
-    transition: all 0.2s ease;
-    border-bottom: 2px solid var(--title-color);
+    margin: auto;
 }
 
-/* .navigation ul li a:hover .navigation ul li div{
-    display: block;
+
+.navigation ul li a:hover+.active{
     width: 100%;
+}
+
+/* Mobile Hamburger */
+
+.hamburger span{
+    font-size: 2.5rem;
+    float: right;
+    margin-top: -70px;
+    color: var(--title-color);
+    cursor: pointer;
+    display: none;
+    margin-right: 2rem;
+}
+.hamburger .hamburger-overlay{
+    position: absolute;
+    height: 100%;
+    width: 0;
     background-color: var(--title-color);
-} */
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.hamburger .hamburger-overlay>a{
+    font-size: 2rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    display: block;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+.hamburger .hamburger-overlay>a:hover{
+    color: rgb(255, 73, 73);
+}
+.hamburger .hamburger-overlay .navigation-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 50px;
+}
+.hamburger .hamburger-overlay .navigation-overlay a{
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+}
+.hamburger .hamburger-overlay .navigation-overlay div{
+    height: 4px;
+    width: 0;
+    background-color: var(--yellow-background);
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.hamburger .hamburger-overlay .navigation-overlay a:hover{
+    color: #fff29d;
+}
+.hamburger .hamburger-overlay .navigation-overlay a:hover+.overlay-nav-active{
+    width: 100%;
+}
 
-
+/* Header content */
 
 .header-content-wrapper{
     display: flex;

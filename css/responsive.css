@@ -14,25 +14,10 @@
 }
 @media screen and (max-width:1024px) {
     .navigation{
-        float: none !important;
+        display: none;
     }
-    .navigation ul{
-        justify-content: center;
-        margin-top: 0 !important;
-    }
-    
-    .navigation-wrapper .logo{
+    .hamburger span{
         display: block !important;
-        text-align: center;
-    }
-    .header-content-wrapper{
-        top: 60% !important;
-    }
-    .header-content-wrapper .header-left-content h2{
-        font-size: 2rem !important;
-    }
-    .header-content-wrapper .header-left-content h1{
-        font-size: 3rem !important;
     }
 }
 @media screen and (max-width:992px) {
