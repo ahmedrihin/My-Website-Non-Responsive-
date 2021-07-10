@@ -25,36 +25,38 @@
 
 <body>
     <header id="home">
-        <div class="container">
-            <div class="navigation-wrapper">
-                <div class="logo">
-                    <a href="index.html">
-                        <h3>Rihin</h3>
-                    </a>
-                </div>
-                <div class="navigation">
-                    <ul>
-                        <li><a href="#home">Home</a>
-                            <div class="active"></div>
-                        </li>
-                        <li><a href="#about">About Me</a>
-                            <div class="active"></div>
-                        </li>
-                        <li><a href="#achievement">Achievements</a>
-                            <div class="active"></div>
-                        </li>
-                        <li><a href="#portfolio">Portfolio</a>
-                            <div class="active"></div>
-                        </li>
-                        <li><a href="#contact-me">Contact Me</a>
-                            <div class="active"></div>
-                        </li>
-                    </ul>
-                </div>
+        <nav id="nav">
+            <div class="container">
+                <div class="navigation-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h3>Rihin</h3>
+                        </a>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="#home">Home</a>
+                                <div class="active"></div>
+                            </li>
+                            <li><a href="#about">About Me</a>
+                                <div class="active"></div>
+                            </li>
+                            <li><a href="#achievement">Achievements</a>
+                                <div class="active"></div>
+                            </li>
+                            <li><a href="#portfolio">Portfolio</a>
+                                <div class="active"></div>
+                            </li>
+                            <li><a href="#contact-me">Contact Me</a>
+                                <div class="active"></div>
+                            </li>
+                        </ul>
+                    </div>
 
 
+                </div>
             </div>
-        </div>
+        </nav>
 
         <!-- Mobile Hambarger -->
 
@@ -78,11 +80,14 @@
                 </div>
             </div>
         </div>
+
+
+
         <div class="container">
             <div class="header-content-wrapper">
                 <div class="header-left-content">
-                    <h2>Hi, I'm a Student</h2>
-                    <h1>Web designer</h1>
+                    <h2>Hi, I'm Rihin, A</h2>
+                    <h1><span class="element"></span></h1>
                     <h4>based in Dhaka, BANGLADESH.</h4>
                     <button type="button" class="btn btn-view-work">View My Works</button>
                     <button type="button" class="btn btn-contact">Contact Me <i
@@ -100,7 +105,8 @@
         </div>
     </header>
 
-    <section id="about">
+    <!-- About section -->
+    <section id="about" class="aboutStickymenu">
         <div class="container">
             <div class="about-top-text text-center">
                 <h3>About me</h3>
@@ -339,8 +345,23 @@
         </div>
     </footer>
     <script src="./js/fontawesome.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $('.aboutStickymenu').waypoint(function (direction) {
+                if (direction == 'down') {
+                    $('nav').addClass('sticky');
+                }
+                else {
+                    $('nav').removeClass('sticky');
+                }
+            })
+        })
+    </script> -->
+
 </body>
 
 </html>

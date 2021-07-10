@@ -44,9 +44,9 @@ section{
 }
 .navigation-wrapper{
     padding: 17px 0;
-}
-.navigation-wrapper .logo{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navigation-wrapper .logo a{
     text-decoration: none;
@@ -57,10 +57,6 @@ section{
     font-weight: bolder;
     font-size: 2rem;
     letter-spacing: 2px;
-}
-.navigation{
-    float: right;
-    margin-top: 1%;
 }
 .navigation ul{
     display: flex;
@@ -95,6 +91,10 @@ section{
 .navigation ul li a:hover+.active{
     width: 100%;
 }
+.stuck {
+    position:fixed;
+    top:0;
+  }
 
 /* Mobile Hamburger */
 
@@ -164,13 +164,11 @@ section{
 
 .header-content-wrapper{
     display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(20%);
+    justify-content: space-between;
+    align-items: center;
 }
-.header-content-wrapper .header-left-content{
-    padding-right: 10rem;
-}
+
 .header-content-wrapper .header-left-content h2{
     text-transform: uppercase;
     font-size: 3rem;
@@ -356,6 +354,8 @@ section{
 .achievement-card-wrapper .card{
     background-color: var(--card-background);
     padding: 2rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px #c1c1c1;
 }
 .achievement-card-wrapper .card .card-icon{
     color: var(--yellow-background);
