@@ -91,9 +91,13 @@ section{
 .navigation ul li a:hover+.active{
     width: 100%;
 }
-.stuck {
+.sticky {
     position:fixed;
     top:0;
+    width: 100%;
+    background-color: #ffed73;
+    transition: all .5s ease;
+    box-shadow: 1px 1px 10px 0px darkgrey;
   }
 
 /* Mobile Hamburger */
