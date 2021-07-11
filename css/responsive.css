@@ -90,7 +90,7 @@
 @media screen and (max-width:694px) {
     .header-content-wrapper {
         flex-direction: column-reverse;
-        transform: translateY(0) !important;
+        transform: translateY(5%) !important;
     }
     header{
         height: 150vh !important;

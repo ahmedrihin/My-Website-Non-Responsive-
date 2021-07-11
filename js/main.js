@@ -17,6 +17,16 @@ $(document).ready(function(){
             $('#nav').removeClass('sticky');
         }
     })
+
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#backtotop').fadeIn('slow');
+        }
+        else{
+            $('#backtotop').fadeOut('slow');
+        }
+    })
 })
 
 

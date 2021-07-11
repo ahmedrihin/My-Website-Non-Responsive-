@@ -113,7 +113,7 @@ section{
 }
 .hamburger .hamburger-overlay{
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 0;
     background-color: var(--title-color);
     z-index: 10;
@@ -253,6 +253,29 @@ section{
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
+}
+
+i.top{
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    background-color: var(--yellow-background);
+    border-radius: 50%;
+    color: var(--title-color);
+    border: 1px solid #ccba42;
+    transition: all 0.5s ease;
+}
+i.top:hover{
+    background-color: #ccba42;
+}
+#backtotop{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    transition: all 0.5s ease;
+    display: none;
 }
 
 /* About section design */
